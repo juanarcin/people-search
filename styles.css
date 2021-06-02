@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+#results{
+	text-align: center;
+}
+h1{
+	margin: 0 0 10px 0;
+    letter-spacing: 3px;
+}
+h2{
+	font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+li {
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 15px;
+}
+.profile-pic{
+	width: 128px;
+	height: 128px;
+	overflow: hidden;
+	border-radius: 60px;
+	display:inline-block;
+}
+.profile-pic img{
+	width: 100%;
+}
+.name{
+	display: block;
+  background: #a8bce8;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.age, .sex{
+	display:inline-block;
+	width: 48%;
+}
+.age{
+	text-align: right;
+}
+
+.sex{
+	text-align: left;
+}
+.search-segment{
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	position: relative;
+	width: 30%;
+	text-align: center;
+	box-sizing: border-box;
+}
+#name{
+	width: 90%;
+}
+#age, #gender{
+	width:  43%;
+}
+.radio-field{
+	display: inline-block;
+	margin:  0 10px;
+}
+label{
+	display: block;
+}
+.title{
+	position: relative;
+	display: block;
+	top: -25px;
+	height:  20px;
+}
+.title span{
+	background: #ff7500;
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 10px;
+	color: #fff;
+}
+input[type='radio']{
+	margin: 0 20px 0 0;
+}
+input[type='radio']:last-of-type{
+	margin-right: 0;
+}
+.options{
+	text-align: center;
+}
+#edit{
+	height: 20px;
+	margin:  0;
+}
+#edit.hide{
+	visibility: hidden;
+}
+.count{
+	color: #4bff00;
+}
+.red{
+	color: #d85b5b;
+}
+header{
+	background: #0b1a3c;
+	color:#fff;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#clear{
+	width: 30%;
+    background: #0b1a3c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+}
+@media only screen and (min-width:710px){
+	.search-segment{
+		width: 30%;
+	}
+	#name, #age, #gender{
+		width:  30%;
+	}
+	#searchByName{
+		margin-top:  16px;
+	}
+}
