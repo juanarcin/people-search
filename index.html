@@ -1,1 +1,57 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		People Search
+	</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<h1>People Search</h1>
+		<h2>There are currently <span class="count red">0</span> results</h2>
+		<p class="red" id="edit">Please edit the search options to display filtered results</p>
+	</header>
+	<div class="options">
+		<div class="search-segment" id="name">
+			<div class="title"><span>search by name</span></div>
+			<input id="searchByName" type="text" onkeyup="setNameFilter()"/>
+		</div>
+		<div class="search-segment" id="gender">
+			<div class="title"><span>search by gender</span></div>
+			<div class="radio-field">
+				<label>Male </label>
+		    <input class="gender" type="radio" name="gender" value="male" onclick="setRadioFilters('gender', 'male');" />
+		  </div>
+		  <div class="radio-field">
+		    <label>Female</label> 
+		    <input class="gender" type="radio" name="gender" value="female" onclick="setRadioFilters('gender', 'female');" />
+		  </div>
+		</div>
+		<div class="search-segment" id="age">
+			<div class="title"><span>search by age</span></div>
+		  <div class="radio-field">
+		    <label>0-30 </label>
+		    <input type="radio" name="age" value="30" onclick="setRadioFilters('age', 30);" />
+		  </div>
+		  <div class="radio-field">
+		    <label>31-50</label>
+		    <input type="radio" name="age" value="40" onclick="setRadioFilters('age', 40);" />
+		  </div>
+		  <div class="radio-field">
+		    <label>51+</label>
+		    <input type="radio" name="age" value="50" onclick="setRadioFilters('age', 50);" />
+		  </div>
+	  </div>
+	  <div>
+	  	<button id="clear">Clear Filters</button>
+	  </div>
+
+	</div>
+
+	<ul id="results"></ul>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
